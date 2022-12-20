@@ -6,6 +6,6 @@ source_list = [
 ]
 
 print(list(map(lambda x: (x[0],
-                          round((x[2] * x[3]), 2) if x[2] * x[3] > 100 else
+                          round((x[2] * x[3]), 2) if x[2] * x[3] >= 100 else
                           round((x[2] * x[3]), 2) + 10), source_list))
       )
