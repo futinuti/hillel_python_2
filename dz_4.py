@@ -12,12 +12,12 @@ class DigitalCounter:
             self.current = self.start
 
     def get_current_value(self):
-        print(f'Текущее значение {self.current}')
+        return self.current
 
 
 if __name__ == '__main__':
     c = DigitalCounter()
-    c.get_current_value()
+    print(c.get_current_value())
     for i in range(111):
         c.increase()
-    c.get_current_value()
+    print(c.get_current_value())
